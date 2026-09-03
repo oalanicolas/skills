@@ -1,4 +1,4 @@
 interface:
   display_name: "Studio Lendário"
   short_description: "Eleve áudio e vídeo com qualquer equipamento"
-  default_prompt: "Use $studio-lendario para diagnosticar minha gravação e guiar melhorias de câmera, luz, áudio e OBS."
+  default_prompt: "Use $studio-lendario audit para diagnosticar minha gravação, priorizar melhorias sem compras e dizer se o setup passa no Studio Gate."

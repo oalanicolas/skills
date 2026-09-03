@@ -5,7 +5,7 @@ description: Diagnostica, configura e melhora gravações de voz e vídeo com o 
 
 # Studio Lendário
 
-Elevar a qualidade audiovisual por diagnóstico, controle de variáveis e validação. Adaptar o método ao objetivo, ao ambiente e ao equipamento real; nunca transformar um preset em regra universal.
+Elevar a qualidade audiovisual por diagnóstico, controle de variáveis e validação. Funcionar como uma camada de craft para produção audiovisual: corrigir a base técnica antes de dirigir gosto, acabamento e intenção. Adaptar o método ao objetivo, ao ambiente e ao equipamento real; nunca transformar um preset em regra universal.
 
 ## Regras centrais
 
@@ -18,6 +18,71 @@ Elevar a qualidade audiovisual por diagnóstico, controle de variáveis e valida
 - Obter confirmação visual e auditiva antes de declarar um setup final.
 - Não publicar, enviar ou reutilizar mídia pessoal sem consentimento explícito.
 - Em pedidos de análise, diagnosticar e orientar; só modificar aplicativos, arquivos ou dispositivos quando o usuário pedir.
+
+## Modos de operação
+
+Aceitar um modo explícito depois de `$studio-lendario`. Quando o usuário não escolher um modo, inferir o menor conjunto necessário e explicar a rota adotada.
+
+- `audit`: diagnóstico completo do estúdio e da cadeia audiovisual.
+- `critique`: crítica profissional de uma gravação específica.
+- `calibrate`: correção da base técnica antes do refinamento estético.
+- `camera`: câmera, celular, lente, exposição, balanço de branco e foco.
+- `light`: iluminação do rosto, contraste, fundo, recorte e reflexos.
+- `voice`: microfone, distância, sala, ganho, ruído, equalização e dinâmica.
+- `capture`: OBS, placa de captura, resolução, fps, encoder, codec e container.
+- `sync`: diagnóstico de offset constante ou drift e correção audiovisual.
+- `polish`: acabamento geral depois da aprovação técnica.
+- `cinematic`: direção estética, contraste, profundidade, cor e textura.
+- `bolder`: resultado mais dramático, contrastado e marcante.
+- `quieter`: cenário mais limpo, elegante e menos chamativo.
+- `live`: acompanhamento de testes sucessivos enquanto o usuário ajusta o estúdio.
+- `lock`: registro e congelamento do setup final aprovado.
+- `teach`: transformação do processo em aula, tutorial ou checklist.
+
+Combinar modos quando houver dependência clara, por exemplo `audit camera light` ou `capture sync`. Não executar `polish`, `cinematic` ou `bolder` antes do Studio Gate.
+
+Quando um modo for invocado, usar o contrato de entrada, ação e saída em [modes-and-gate.md](references/modes-and-gate.md). Exemplos:
+
+```text
+Use $studio-lendario audit para analisar meu estúdio inteiro.
+```
+
+```text
+Use $studio-lendario cinematic para aproximar minha imagem desta referência sem comprar equipamentos.
+```
+
+```text
+Use $studio-lendario live enquanto faço testes com a iluminação.
+```
+
+```text
+Use $studio-lendario lock para salvar a configuração final aprovada.
+```
+
+## Studio Gate
+
+Antes de qualquer refinamento estético, confirmar:
+
+- pele sem clipping destrutivo;
+- olhos em foco;
+- balanço de branco estável;
+- fps constante e sem frames perdidos relevantes;
+- ausência de flicker perceptível;
+- áudio sem clipping ou duplicação;
+- voz inteligível e com ruído controlado;
+- sincronização aprovada no começo e no fim;
+- arquivo gravado em formato seguro;
+- cabos, tripés, girafas, luzes, calor e energia em condição física segura.
+
+Se algum item falhar, voltar ao modo técnico correspondente. Não usar LUT para corrigir exposição, equalização para compensar microfone distante nem resolução para mascarar movimento quebrado.
+
+Ao concluir a checagem, declarar um destes estados:
+
+- `APROVADO`: todas as condições relevantes foram verificadas no arquivo final;
+- `REPROVADO`: há falha técnica que bloqueia o refinamento estético;
+- `NÃO VERIFICÁVEL`: falta evidência ou ferramenta para confirmar uma condição.
+
+Nunca tratar `NÃO VERIFICÁVEL` como aprovado. O refinamento pode continuar apenas se o usuário aceitar explicitamente a incerteza e a consequência estiver clara.
 
 ## Fluxo
 
@@ -127,4 +192,5 @@ Usar [final-setup-template.md](assets/final-setup-template.md). Se o usuário qu
 ## Referências
 
 - Caso real e decisões transferíveis: [case-study.md](references/case-study.md)
+- Contratos dos modos e Studio Gate: [modes-and-gate.md](references/modes-and-gate.md)
 - Fontes técnicas primárias e política de atualização: [sources.md](references/sources.md)
