@@ -76,6 +76,24 @@ Subtrair antes de somar. Cada mudança cita uma regra. Blocos canônicos entram 
 
 Verificada contra a documentação oficial em 2026-09-23. O Opus 5.5 foi lançado em 2026-09-22.
 
+## Catalog
+
+- [Studio Lendário](studio-lendario/SKILL.md): improve an existing audiovisual setup.
+- [Opus 5.5 Converter](opus-5-5-converter/SKILL.md): adapt prompts and agent instructions.
+- [AI-first Company Diagnostic](ai-first-company-diagnostic/SKILL.md): audit Brain, Skills, Agents, Factory, Loop and Growth; rank three profit-per-human-hour pilots.
+
+## Free Diagnostic & Next Step
+
+Use the free [AI-first Company Diagnostic](ai-first-company-diagnostic/SKILL.md) to create an executive readiness report from your own evidence and economic assumptions. It runs locally with Node.js and collects no contact details.
+
+```sh
+node ai-first-company-diagnostic/scripts/score-company.mjs --input company.json --out report.md --json
+```
+
+The skill includes the input schema and an explicitly illustrative example. The report shows a maturity bar, evidence gaps and three ranked pilots, with estimated returns separated from actual results.
+
+For the advanced next step with the Academia Lendária & Synkra AIOX ecosystem, [explore the public AIOX project](https://github.com/SynkraAI/aiox-core?utm_source=skills&utm_medium=readme&utm_campaign=free_diagnostic). Set `--cta-url` to an approved HTTPS booking or opt-in destination to prepare your own funnel; UTM values are configurable. The default link is a project page, not a booking service. No form, outreach or automatic transmission is included.
+
 ## Licença
 
 MIT.
